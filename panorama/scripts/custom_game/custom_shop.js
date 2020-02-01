@@ -27,8 +27,11 @@ GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "b
 
 function LoadCurrency(Data)
 {
-$("#player-currency").text = Data.player_currency
-
+	$.Msg(Data.beta_tester_particle)
+	if (Data.beta_tester_particle == "true") {
+		$("#beta_particle_owned_text").text = "(Owned)"
+	}
+$("#player-currency").text = Data.player_currency + " Gems"
 }
 
 var handle = GameEvents.Subscribe( "player_currency_loaded", LoadCurrency );

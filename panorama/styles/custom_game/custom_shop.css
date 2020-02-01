@@ -44,7 +44,7 @@ font-size: 20px;
 		width:20%;
 		height:20%;
 		margin-top: 10%;
-		margin-left: 25%;
+		margin-left: 2%;
 horizontal-align: left;
 color: white;
 background-size: 100%;
@@ -69,5 +69,11 @@ width: 120px;
 font-size: 15px;
 horizontal-align: right;
 color: white;
+
+}
+#beta_particle_owned_text
+{
+horizontal-align: center;
+vertical-align: bottom;
 
 }
