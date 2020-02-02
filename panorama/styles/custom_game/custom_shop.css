@@ -84,10 +84,11 @@ font-family: RadianceM;
 #beta_particle_owned_text
 {
 horizontal-align: center;
-margin-bottom: -6px;
+font-size: 20px;
 vertical-align: bottom;
 font-family: RadianceM;
-
+color:green;
+background-color:black;
 }
 #gem-logo
 {
@@ -99,6 +100,43 @@ font-family: RadianceM;
 		margin-top: -18px;
 
 }
+
+.flower_trail_icon
+{
+width:20%;
+height:20%;
+margin-top: 10%;
+margin-left: 25%;
+horizontal-align: left;
+color: white;
+background-size: 100%;
+font-family: RadianceM;
+
+
+}
+.flower_trail_particle_title
+{
+height: 40px;
+horizontal-align: center;
+vertical-align: top;
+color: white;
+font-size: 20px;
+font-family: RadianceM;
+}
+#flower_trail_particle_owned_text
+{
+horizontal-align: center;
+font-size: 20px;
+vertical-align: bottom;
+font-family: RadianceM;
+color:green;
+background-color:black;
+}
+
+
+
+
+
 
 Label, TextEntry
 {

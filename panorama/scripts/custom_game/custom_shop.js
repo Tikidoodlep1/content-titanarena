@@ -24,6 +24,12 @@ function PlayerSelectBetaTester()
 $.Msg("Player selected beta tester particle in shop!")
 GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "beta_tester", price: 100000000000000000000000000000000000000000, player_id: player} )
 }
+function PlayerSelectFlowerParticle()
+{
+	player = Game.GetLocalPlayerInfo().player_id
+$.Msg("Player selected beta tester particle in shop!")
+GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "flower_trail", price: 400, player_id: player} )
+}
 
 function LoadCurrency(Data)
 {
@@ -39,5 +45,8 @@ function LoadParticles(Data)
 $.Msg(Data.beta_tester_particle)
 	if (Data.beta_tester_particle == "true") {
 		$("#beta_particle_owned_text").text = "(Owned)"
+	}
+		if (Data.flower_trail_particle == "true") {
+		$("#flower_trail_particle_owned_text").text = "(Owned)"
 	}
 }

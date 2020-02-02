@@ -25,12 +25,23 @@
 </Panel>
 
 <Panel class="beta_particle_icon" id="beta_particle_icon">
-	<Button id="ShuffleTeamAssignmentButton" onactivate="PlayerSelectBetaTester()">
+	<Button id="beta_particle_button" onactivate="PlayerSelectBetaTester()">
 	<Image src="file://{images}/custom_game/loading_screen/beta-tester-particle.png" />
+	<Label id="beta_particle_owned_text" text="(Not A Beta Tester)" />
 </Button>
 	<Panel class="beta_particle_title" id="beta_particle_title">
 		<Label id="beta_particle_text" text="Beta Tester Particle" />
-		<Label id="beta_particle_owned_text" text="(Not A Beta Tester)" />
+
+</Panel>
+</Panel>
+
+<Panel class="flower_trail_icon" id="flower_trail_icon">
+	<Button id="beta_particle_button" onactivate="PlayerSelectFlowerParticle()">
+	<Image src="file://{images}/custom_game/loading_screen/flower-trail-particle.png" />
+	<Label id="flower_trail_particle_owned_text" text="(400 Gems)" />
+</Button>
+	<Panel class="flower_trail_particle_title" id="flower_trail_particle_title">
+		<Label id="flower_trail_particle_text" text="Flower Trail" />
 
 </Panel>
 </Panel>
