@@ -2,15 +2,16 @@
 
 .duel-timer
 {
-horizontal-align: left;
-color: #A3B5D0CC;
-font-size: 	20px;
+horizontal-align: center;
 text-shadow: 1px 1px 3px 6 #000000;
+color: white;
+font-size: 	23px;
 margin-top: 15px;
-margin-left: 11px;
+margin-left: 0px;
   text-align: center;
   font-family: RadianceM;
-  margin-right: 4px;
+  margin-right: 0px;
+   text-shadow: 2px 2px #ff0000;
 /*background-color: gradient( linear, 0% 0%, 100% 0%, from( #425663cc ), color-stop( .5, #42566355 ), to( #0000 ) );
 */
 width: 175px;
@@ -24,15 +25,15 @@ transition-timing-function: ease-out;
 .stats1
 {
 
-  color: #A3B5D0CC;
+  color: white;
   text-align: left;
-  horizontal-align: left;
-  margin-right: 12px;
+  horizontal-align: middle;
+  margin-right:0px;
   margin-top: 0px;
-  margin-left: 11px;
+  margin-left: 50px;
 /*background-color: gradient( linear, 0% 0%, 100% 0%, from( #425663cc ), color-stop( .5, #42566355 ), to( #0000 ) );
 */
-  font-size: 	13px;
+  font-size: 	18px;
   width: 190px;
    text-shadow: 0 0 3px 6 #000000;
      font-family: RadianceM;
@@ -79,7 +80,7 @@ transition-timing-function: ease-out;
 /*background-color: gradient( linear, 0% 0%, 100% 0%, from( #425663cc ), color-stop( .5, #42566355 ), to( #0000 ) );
 */
   width: 190px;
-  font-size: 	13px;
+  font-size: 	15px;
    text-shadow: 0 0 3px 6 #000000;
      font-family: RadianceM;
      margin-left: 11px;
@@ -180,16 +181,7 @@ transition-timing-function: ease-out;
    margin-left: 11px;
 
 }
-.stats
-{
-  width: 190px;
-  height:38px;		
-  color: white;
-  margin-top: 104px;
-  text-shadow: 1px 1px 3px 6 #000000;
-    background-color: gradient( linear, 0% 0%, 100% 0%, from( #425663cc ), color-stop( .45, #42566355 ), to( #0000 ) );
 
-}
 
 .title
 {
@@ -200,7 +192,7 @@ margin-top: 10px;
 margin-left: 50px;
 text-shadow: 1px 1px 2px 6 #000000;
 horizontal-align: left;
-
+font-family: RadianceM;
 }
 .numbers
 {
@@ -211,8 +203,21 @@ background-color: green;
 vertical-align: top;
 margin-top: 200px;
 text-shadow: 1px 1px 3px 6 #000000;
+text-shadow: 2px 2px #ff0000;
+font-family: RadianceM;
 }
+.stats
+{
+  width: 250px;
+  height:43px;    
+  color: white;
+  margin-top: 104px;
+  text-shadow: 1px 1px 3px 6 #000000;
+    background-color: gradient( linear, 5% 100%, 5% 5%, from( #425663cc ), color-stop( .45, #42566355 ), to( #0000 ) );
+    vertical-align: bottom;
+    margin-left: 1380px;
 
+}
 Label, TextEntry
 {
   font-family: Radiance,FZLanTingHei-R-GBK,TH Sarabun New,YDYGO 540,Gulim,MingLiU;
