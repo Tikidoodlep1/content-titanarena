@@ -1,0 +1,310 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_flCullRadius = -1.0
+	m_flConstantRadius = 1.0
+	m_flMaxDrawDistance = 4000.0
+	m_flNoDrawTimeToGoToSleep = 2.0
+	m_bShouldSort = false
+	m_nMinCPULevel = 1
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderModels"
+			m_ModelList = 
+			[
+				{
+					m_model = resource:"models/items/pangolier/ti9_cache_pango_navigator_off_hand/ti9_cache_pango_bird.vmdl"
+				},
+			]
+			m_bOrientZ = true
+			m_bScaleAnimationRate = true
+			m_nBodyGroupField = "18"
+			m_bAnimated = true
+			m_flAnimationRate = 600.0
+			m_vecColorScale = 
+			{
+				m_nType = "PVEC_TYPE_LITERAL_COLOR"
+				m_LiteralColor = [ 255, 255, 255 ]
+			}
+		},
+	]
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+			m_nOpEndCapState = 1
+		},
+		{
+			_class = "C_OP_OrientTo2dDirection"
+			m_flRotOffset = 90.0
+			m_flSpinStrength = 0.25
+			m_nFieldOutput = "12"
+		},
+		{
+			_class = "C_OP_SetPerChildControlPoint"
+			m_nFirstControlPoint = 12
+		},
+		{
+			_class = "C_OP_VectorNoise"
+			m_bAdditive = true
+			m_vecOutputMax = [ 3.0, 3.0, 33.0 ]
+			m_vecOutputMin = [ -3.0, -3.0, -33.0 ]
+			m_nFieldOutput = "0"
+			m_fl4NoiseScale = 5.0
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.1
+		},
+		{
+			_class = "C_OP_DampenToCP"
+			m_nControlPointNumber = 10
+			m_flRange = 300.0
+		},
+		{
+			_class = "C_OP_SetControlPointsToModelParticles"
+			m_AttachmentName = "attach_tail"
+			m_nFirstControlPoint = 1
+			m_bAttachment = true
+		},
+		{
+			_class = "C_OP_SetControlPointsToModelParticles"
+			m_AttachmentName = "attach_head_01"
+			m_nFirstControlPoint = 2
+			m_bAttachment = true
+		},
+		{
+			_class = "C_OP_LerpEndCapScalar"
+			m_flOutput = 0.0
+			m_flLerpTime = 0.3
+		},
+		{
+			_class = "C_OP_EndCapTimedDecay"
+			m_flDecayTime = 0.3
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 22.0
+			m_fLifetimeMin = 8.0
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMin = 30.0
+			m_fRadiusMax = 30.0
+			m_nControlPointNumber = 11
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+		},
+		{
+			_class = "C_INIT_InitialVelocityNoise"
+			m_vecOutputMax = [ 100.0, 100.0, 0.0 ]
+			m_vecOutputMin = [ -100.0, -100.0, 0.0 ]
+			m_nControlPointNumber = 10
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [ 246, 255, 0, 255 ]
+			m_ColorMax = [ 251, 238, 0, 255 ]
+			m_TintMax = [ 190, 224, 0, 255 ]
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = 1.0
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.0
+				m_flRandomMax = 1.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flMultFactor = 1.0
+				m_flInput0 = 0.0
+				m_flInput1 = 1.0
+				m_flOutput0 = 0.0
+				m_flOutput1 = 1.0
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.0
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+		},
+	]
+	m_ForceGenerators = 
+	[
+		{
+			_class = "C_OP_AttractToControlPoint"
+			m_vecComponentScale = [ 1.0, 1.0, 0.0 ]
+			m_fFalloffPower = -0.75
+			m_fForceAmount = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 80.0
+			}
+			m_nControlPointNumber = 10
+		},
+		{
+			_class = "C_OP_TurbulenceForce"
+			m_vecNoiseAmount3 = [ -300.0, -300.0, -300.0 ]
+			m_flNoiseCoordScale3 = 5.0
+			m_vecNoiseAmount2 = [ 100.0, 100.0, 100.0 ]
+			m_flNoiseCoordScale2 = 3.0
+			m_vecNoiseAmount1 = [ -510.0, -510.0, -510.0 ]
+			m_flNoiseCoordScale1 = 0.1
+			m_vecNoiseAmount0 = [ 450.0, 450.0, 450.0 ]
+		},
+		{
+			_class = "C_OP_TwistAroundAxis"
+			m_fForceAmount = 5000.0
+			m_bLocalSpace = true
+			m_nControlPointNumber = 10
+		},
+		{
+			_class = "C_OP_AttractToControlPoint"
+			m_vecComponentScale = [ 1.0, 1.0, 0.0 ]
+			m_fForceAmount = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = -150.0
+			}
+			m_fFalloffPower = -0.01
+			m_nControlPointNumber = 10
+		},
+		{
+			_class = "C_OP_AttractToControlPoint"
+			m_fForceAmount = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = -4000.0
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.0
+				m_flRandomMax = 1.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flMultFactor = 1.0
+				m_flInput0 = 0.0
+				m_flInput1 = 1.0
+				m_flOutput0 = 0.0
+				m_flOutput1 = 1.0
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.0
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+			m_fFalloffPower = 1.0
+			m_vecComponentScale = [ 1.0, 1.0, 0.0 ]
+			m_nControlPointNumber = 10
+		},
+		{
+			_class = "C_OP_ParentVortices"
+			m_flForceScale = 100.0
+		},
+	]
+	m_Constraints = 
+	[
+		{
+			_class = "C_OP_PlanarConstraint"
+			m_bGlobalNormal = true
+			m_flOpEndFadeInTime = 10.0
+			m_nControlPointNumber = 10
+		},
+		{
+			_class = "C_OP_ConstrainDistance"
+			m_fMaxDistance = 200.0
+			m_nControlPointNumber = 10
+			m_fMinDistance = 10.0
+		},
+		{
+			_class = "C_OP_PlanarConstraint"
+			m_PointOnPlane = [ 0.0, 0.0, 50.0 ]
+			m_PlaneNormal = [ 0.0, 0.0, -1.0 ]
+			m_flOpEndFadeInTime = 10.0
+			m_nControlPointNumber = 10
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/econ/items/pangolier/pangolier_ti9_cache/pangolier_ti9_cache_offhand_ambient_trail.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/items/pangolier/pangolier_ti9_cache/pangolier_ti9_cache_offhand_ambient_head.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/items/pangolier/pangolier_ti9_cache/pangolier_ti9_cache_offhand_ambient_head.vpcf"
+		},
+	]
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_ABSORIGIN_FOLLOW"
+					m_vecOffset = [ 0.0, 0.0, 0.0 ]
+					m_angOffset = [ 0.0, 0.0, 0.0 ]
+					m_entityName = "parent"
+				},
+				{
+					m_iControlPoint = 10
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = [ 0.0, 0.0, 0.0 ]
+					m_angOffset = [ 0.0, 0.0, 0.0 ]
+					m_entityName = "self"
+				},
+			]
+			m_previewState = 
+			{
+				m_previewModel = "models/items/pangolier/ti9_cache_pango_navigator_off_hand/ti9_cache_pango_navigator_off_hand.vmdl"
+				m_nModSpecificData = 13518
+				m_sequenceName = "idle"
+				m_hitboxSetName = "default"
+				m_materialGroupName = "0"
+			}
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		{
+			_class = "C_OP_SetRandomControlPointPosition"
+			m_nCP1 = 10
+			m_vecCPMinPos = [ 50.0, 50.0, 100.0 ]
+			m_vecCPMaxPos = [ 50.0, 50.0, 100.0 ]
+		},
+		{
+			_class = "C_OP_SetRandomControlPointPosition"
+			m_nCP1 = 11
+			m_vecCPMinPos = [ -200.0, 100.0, 100.0 ]
+			m_vecCPMaxPos = [ -200.0, 100.0, 100.0 ]
+		},
+	]
+	m_nFirstMultipleOverride_BackwardCompat = 4
+	m_nBehaviorVersion = 10
+}

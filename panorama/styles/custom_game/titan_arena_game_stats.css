@@ -3,7 +3,7 @@
 .duel-timer
 {
 horizontal-align: center;
-text-shadow: 1px 1px 3px 6 #000000;
+  text-shadow: 2px 2px 0px 1.0 #000000;
 color: white;
 font-size: 	23px;
 margin-top: 15px;
@@ -30,7 +30,7 @@ transition-timing-function: ease-out;
   horizontal-align: middle;
   margin-right:0px;
   margin-top: 0px;
-  margin-left: 50px;
+  margin-left: 63px;
 /*background-color: gradient( linear, 0% 0%, 100% 0%, from( #425663cc ), color-stop( .5, #42566355 ), to( #0000 ) );
 */
   font-size: 	18px;
@@ -202,7 +202,7 @@ horizontal-align: left;
 background-color: green;
 vertical-align: top;
 margin-top: 200px;
-text-shadow: 1px 1px 3px 6 #000000;
+  text-shadow: 2px 2px 0px 1.0 #000000;
 text-shadow: 2px 2px #ff0000;
 font-family: RadianceM;
 }
@@ -215,7 +215,7 @@ font-family: RadianceM;
   text-shadow: 1px 1px 3px 6 #000000;
     background-color: gradient( linear, 5% 100%, 5% 5%, from( #425663cc ), color-stop( .45, #42566355 ), to( #0000 ) );
     vertical-align: bottom;
-    margin-left: 1380px;
+    margin-left: 1405px;
 
 }
 Label, TextEntry
