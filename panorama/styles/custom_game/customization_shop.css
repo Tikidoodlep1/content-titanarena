@@ -1,12 +1,12 @@
 .customization_shop_button
 {
-	width: 100px;
-	height: 100px;
-	margin-top: 50px;
+	width: 33px;
+	height: 33px;
+	margin-top: 12px;
 
-	horizontal-align: right;
+	horizontal-align: left;
 	vertical-align: top;
-
+    margin-left: 150px;
 }
 #shop_button 
 {
