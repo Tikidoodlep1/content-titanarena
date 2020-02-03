@@ -46,8 +46,8 @@ font-family: RadianceM;
 {
 		width:20%;
 		height:20%;
-		margin-top: 10%;
-		margin-left: 2%;
+		margin-top: 14%;
+		margin-left: 5%;
 horizontal-align: left;
 color: white;
 background-size: 100%;
@@ -74,11 +74,12 @@ margin-top: -20px;
 .currency
 {
 	margin-top: 22px;
-width: 120px;
+width: 300px;
 font-size: 15px;
-horizontal-align: right;
-color: white;
 margin-left: 50px;
+horizontal-align: left;
+color: white;
+
 font-family: RadianceM;
 
 
@@ -92,6 +93,7 @@ font-size: 18;
  color:orange;
  font-weight: bold;
  margin-top: -2px;
+ width: 100%;
 }
 #beta_particle_owned_text
 {
@@ -118,8 +120,8 @@ background-color: gradient( linear, 5% 0%, 100% 0%, from( #e68a00 ), color-stop(
 {
 width:20%;
 height:20%;
-margin-top: 10%;
-margin-left: 25%;
+margin-top: 14%;
+margin-left: 28%;
 horizontal-align: left;
 color: white;
 background-size: 100%;
@@ -151,6 +153,223 @@ background-color: gradient( linear, 5% 0%, 100% 0%, from( #e68a00 ), color-stop(
 
 
 
+
+
+
+Label, TextEntry
+{
+  font-family: Radiance,FZLanTingHei-R-GBK,TH Sarabun New,YDYGO 540,Gul ,MingLiU;
+}
+
+.fall_aura_icon
+{
+width:20%;
+height:20%;
+margin-top: 14%;
+margin-left: 51%;
+horizontal-align: left;
+color: white;
+background-size: 100%;
+font-family: RadianceM;
+
+
+}
+.fall_aura_particle_title
+{
+height: 40px;
+horizontal-align: center;
+vertical-align: top;
+color: white;
+font-size: 20px;
+font-family: RadianceM;
+margin-top: -20px;
+ background-color: gradient( linear, 0% 5%, 0% 100%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+#fall_aura_particle_owned_text
+{
+horizontal-align: left;
+font-size: 15px;
+vertical-align: bottom;
+font-family: RadianceM;
+color:white;
+ font-weight: bold;
+background-color: gradient( linear, 5% 0%, 100% 0%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+
+.green_speed_icon
+{
+width:20%;
+height:20%;
+margin-top: 14%;
+margin-left: 74%;
+horizontal-align: left;
+color: white;
+background-size: 100%;
+font-family: RadianceM;
+
+
+}
+.green_speed_particle_title
+{
+height: 40px;
+horizontal-align: center;
+vertical-align: top;
+color: white;
+font-size: 20px;
+font-family: RadianceM;
+margin-top: -20px;
+ background-color: gradient( linear, 0% 5%, 0% 100%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+#green_speed_particle_owned_text
+{
+horizontal-align: left;
+font-size: 15px;
+vertical-align: bottom;
+font-family: RadianceM;
+color:white;
+ font-weight: bold;
+background-color: gradient( linear, 5% 0%, 100% 0%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+
+.water_walking_icon
+{
+width:20%;
+height:20%;
+margin-top: 40%;
+margin-left: 5%;
+horizontal-align: left;
+color: white;
+background-size: 100%;
+font-family: RadianceM;
+
+
+}
+.water_walking_particle_title
+{
+height: 40px;
+horizontal-align: center;
+vertical-align: top;
+color: white;
+font-size: 20px;
+font-family: RadianceM;
+margin-top: -20px;
+ background-color: gradient( linear, 0% 5%, 0% 100%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+#water_walking_particle_owned_text
+{
+horizontal-align: left;
+font-size: 15px;
+vertical-align: bottom;
+font-family: RadianceM;
+color:white;
+ font-weight: bold;
+background-color: gradient( linear, 5% 0%, 100% 0%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+
+.green_bird_icon
+{
+width:20%;
+height:20%;
+margin-top: 40%;
+margin-left: 28%;
+horizontal-align: left;
+color: white;
+background-size: 100%;
+font-family: RadianceM;
+
+
+}
+.green_bird_particle_title
+{
+height: 40px;
+horizontal-align: center;
+vertical-align: top;
+color: white;
+font-size: 20px;
+font-family: RadianceM;
+margin-top: -20px;
+ background-color: gradient( linear, 0% 5%, 0% 100%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+#green_bird_particle_owned_text
+{
+horizontal-align: left;
+font-size: 15px;
+vertical-align: bottom;
+font-family: RadianceM;
+color:white;
+ font-weight: bold;
+background-color: gradient( linear, 5% 0%, 100% 0%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+
+.pink_bird_icon
+{
+width:20%;
+height:20%;
+margin-top: 40%;
+margin-left: 51%;
+horizontal-align: left;
+color: white;
+background-size: 100%;
+font-family: RadianceM;
+
+
+}
+.pink_bird_particle_title
+{
+height: 40px;
+horizontal-align: center;
+vertical-align: top;
+color: white;
+font-size: 20px;
+font-family: RadianceM;
+margin-top: -20px;
+ background-color: gradient( linear, 0% 5%, 0% 100%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+#pink_bird_particle_owned_text
+{
+horizontal-align: left;
+font-size: 15px;
+vertical-align: bottom;
+font-family: RadianceM;
+color:white;
+ font-weight: bold;
+background-color: gradient( linear, 5% 0%, 100% 0%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+
+.red_bird_icon
+{
+width:20%;
+height:20%;
+margin-top: 40%;
+margin-left: 74%;
+horizontal-align: left;
+color: white;
+background-size: 100%;
+font-family: RadianceM;
+
+
+}
+.red_bird_particle_title
+{
+height: 40px;
+horizontal-align: center;
+vertical-align: top;
+color: white;
+font-size: 20px;
+font-family: RadianceM;
+margin-top: -20px;
+ background-color: gradient( linear, 0% 5%, 0% 100%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+#red_bird_particle_owned_text
+{
+horizontal-align: left;
+font-size: 15px;
+vertical-align: bottom;
+font-family: RadianceM;
+color:white;
+ font-weight: bold;
+background-color: gradient( linear, 5% 0%, 100% 0%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
 
 
 

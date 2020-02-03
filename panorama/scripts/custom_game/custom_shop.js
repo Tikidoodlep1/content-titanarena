@@ -13,7 +13,6 @@ function loadShop()
 function PlayerSelectDevParticle()
 {
 	player = Game.GetLocalPlayerInfo().player_id
-$.Msg("Player selected dev particle in shop!")
 GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "dev", price: 200, player_id: player} )
 
 }
@@ -21,14 +20,54 @@ GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "d
 function PlayerSelectBetaTester()
 {
 	player = Game.GetLocalPlayerInfo().player_id
-$.Msg("Player selected beta tester particle in shop!")
 GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "beta_tester", price: 100000000000000000000000000000000000000000, player_id: player} )
 }
 function PlayerSelectFlowerParticle()
 {
 	player = Game.GetLocalPlayerInfo().player_id
-$.Msg("Player selected beta tester particle in shop!")
 GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "flower_trail", price: 400, player_id: player} )
+}
+
+function PlayerSelectFallAuraParticle()
+{
+	player = Game.GetLocalPlayerInfo().player_id
+GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "fall_aura", price: 500, player_id: player} )
+
+}
+
+function PlayerSelectGreenSpeedParticle()
+{
+	player = Game.GetLocalPlayerInfo().player_id
+GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "green_speed", price: 400, player_id: player} )
+
+}
+
+function PlayerSelectWaterWalkingParticle()
+{
+	player = Game.GetLocalPlayerInfo().player_id
+GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "water_walking", price: 600, player_id: player} )
+
+}
+
+function PlayerSelectGreenBirdParticle()
+{
+	player = Game.GetLocalPlayerInfo().player_id
+GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "green_bird", price: 1000, player_id: player} )
+
+}
+
+function PlayerSelectPinkBirdParticle()
+{
+	player = Game.GetLocalPlayerInfo().player_id
+GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "pink_bird", price: 1000, player_id: player} )
+
+}
+
+function PlayerSelectRedBirdParticle()
+{
+	player = Game.GetLocalPlayerInfo().player_id
+GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "red_bird", price: 1000, player_id: player} )
+
 }
 
 function LoadCurrency(Data)
@@ -48,5 +87,23 @@ $.Msg(Data.beta_tester_particle)
 	}
 		if (Data.flower_trail_particle == "true") {
 		$("#flower_trail_particle_owned_text").text = "(Owned)"
+	}
+		if (Data.fall_aura_particle == "true") {
+		$("#fall_aura_particle_owned_text").text = "(Owned)"
+	}
+		if (Data.green_speed_particle == "true") {
+		$("#green_speed_particle_owned_text").text = "(Owned)"
+	}
+		if (Data.water_walking_particle == "true") {
+		$("#water_walking_particle_owned_text").text = "(Owned)"
+	}
+		if (Data.green_bird_particle == "true") {
+		$("#green_bird_particle_owned_text").text = "(Owned)"
+	}
+		if (Data.pink_bird_particle == "true") {
+		$("#pink_bird_particle_owned_text").text = "(Owned)"
+	}
+		if (Data.red_bird_particle == "true") {
+		$("#red_bird_particle_owned_text").text = "(Owned)"
 	}
 }

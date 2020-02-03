@@ -46,6 +46,78 @@
 </Panel>
 </Panel>
 
+
+<Panel class="fall_aura_icon" id="fall_aura_icon">
+	<Button id="fall_aura_particle_button" onactivate="PlayerSelectFallAuraParticle()">
+	<Image src="file://{images}/custom_game/loading_screen/fall_aura_icon.png" />
+	<Label id="fall_aura_particle_owned_text" text="(500 Gems)" />
+</Button>
+	<Panel class="fall_aura_particle_title" id="fall_aura_particle_title">
+		<Label id="fall_aura_particle_text" text="Fall Aura" />
+
+</Panel>
+</Panel>
+
+
+<Panel class="green_speed_icon" id="green_speed_icon">
+	<Button id="green_speed_particle_button" onactivate="PlayerSelectGreenSpeedParticle()">
+	<Image src="file://{images}/custom_game/loading_screen/green_speed.png" />
+	<Label id="green_speed_particle_owned_text" text="(400 Gems)" />
+</Button>
+	<Panel class="green_speed_particle_title" id="green_speed_particle_title">
+		<Label id="green_speed_particle_text" text="Green Speed" />
+
+</Panel>
+</Panel>
+
+<Panel class="water_walking_icon" id="water_walking_icon">
+	 <Button id="water_walking_particle_button" onactivate="PlayerSelectWaterWalkingParticle()">
+	<Image src="file://{images}/custom_game/loading_screen/water_walking.png" />
+	<Label id="water_walking_particle_owned_text" text="(600 Gems)" />
+</Button>
+	<Panel class="water_walking_particle_title" id="water_walking_particle_title">
+		<Label id="water_walking_particle_text" text="Water Walking" />
+
+</Panel>
+</Panel>
+
+<Panel class="green_bird_icon" id="green_bird_icon">
+	<Button id="green_bird_particle_button" onactivate="PlayerSelectGreenBirdParticle()">
+	<Image src="file://{images}/custom_game/loading_screen/green_bird.png" />
+	<Label id="green_bird_particle_owned_text" text="(1000 Gems)" />
+</Button>
+	<Panel class="green_bird_particle_title" id="green_bird_particle_title">
+		<Label id="green_bird_particle_text" text="Green Bird" />
+
+</Panel>
+</Panel>
+
+<Panel class="pink_bird_icon" id="pink_bird_icon">
+	<Button id="pink_bird_particle_button" onactivate="PlayerSelectPinkBirdParticle()">
+	<Image src="file://{images}/custom_game/loading_screen/pink_bird.png" />
+	<Label id="pink_bird_particle_owned_text" text="(1000 Gems)" />
+</Button>
+	<Panel class="pink_bird_particle_title" id="pink_bird_particle_title">
+		<Label id="pink_bird_particle_text" text="Pink Bird" />
+
+</Panel>
+</Panel>
+
+<Panel class="red_bird_icon" id="red_bird_icon">
+	<Button id="red_bird_particle_button" onactivate="PlayerSelectRedBirdParticle()">
+	<Image src="file://{images}/custom_game/loading_screen/red_bird.png" />
+	<Label id="red_bird_particle_owned_text" text="(1000 Gems)" />
+</Button>
+	<Panel class="red_bird_particle_title" id="red_bird_particle_title">
+		<Label id="red_bird_particle_text" text="Red Bird" />
+
+</Panel>
+</Panel>
+
+
+
+
+
 </Panel>
 
 
