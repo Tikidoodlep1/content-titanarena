@@ -89,7 +89,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 200000.0
+				m_flLiteralValue = 200000000.0
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
@@ -139,6 +139,6 @@
 			]
 		},
 	]
-	m_nBehaviorVersion = 5
+	m_nBehaviorVersion = 10
 	m_nFirstMultipleOverride_BackwardCompat = 6
 }

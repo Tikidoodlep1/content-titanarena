@@ -95,7 +95,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 3000.0
+				m_flLiteralValue = 30000.0
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
@@ -139,7 +139,7 @@
 			m_ChildRef = resource:"particles/phase_boots_ti7_streaks_2.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/econ/events/ti7/phase_boots_ti7_bubbles.vpcf"
+			m_ChildRef = resource:"particles/phase_boots_ti7_bubbles_2.vpcf"
 		},
 	]
 	m_controlPointConfigurations = 
