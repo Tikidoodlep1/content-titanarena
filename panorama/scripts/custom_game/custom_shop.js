@@ -70,6 +70,34 @@ GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "r
 
 }
 
+function PlayerSelectOrbitalAuraParticle()
+{
+	player = Game.GetLocalPlayerInfo().player_id
+GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "orbital_aura", price: 1200, player_id: player} )
+
+}
+
+function PlayerSelectBlueLightningParticle()
+{
+	player = Game.GetLocalPlayerInfo().player_id
+GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "blue_lightning", price: 300, player_id: player} )
+
+}
+
+function PlayerSelectRedLightningParticle()
+{
+	player = Game.GetLocalPlayerInfo().player_id
+GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "red_lightning", price: 300, player_id: player} )
+
+}
+
+function PlayerSelectGoldLightningParticle()
+{
+	player = Game.GetLocalPlayerInfo().player_id
+GameEvents.SendCustomGameEventToServer( "player_purchase_custom_item", {item: "gold_lightning", price: 300, player_id: player} )
+
+}
+
 function LoadCurrency(Data)
 {
 	
@@ -105,5 +133,11 @@ $.Msg(Data.beta_tester_particle)
 	}
 		if (Data.red_bird_particle == "true") {
 		$("#red_bird_particle_owned_text").text = "(Owned)"
+	}
+		if (Data.orbital_aura_particle == "true") {
+		$("#orbital_aura_particle_owned_text").text = "(Owned)"
+	}
+		if (Data.blue_lightning_particle == "true") {
+		$("#blue_lightning_particle_owned_text").text = "(Owned)"
 	}
 }

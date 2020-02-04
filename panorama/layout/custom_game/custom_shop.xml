@@ -114,9 +114,50 @@
 </Panel>
 </Panel>
 
+<Panel class="orbital_aura_icon" id="orbital_arua_icon">
+	<Button id="orbital_aura_particle_button" onactivate="PlayerSelectOrbitalAuraParticle()">
+	<Image src="file://{images}/custom_game/loading_screen/orbital_aura.png" />
+	<Label id="orbital_aura_particle_owned_text" text="(1200 Gems)" />
+</Button>
+	<Panel class="orbital_aura_particle_title" id="red_bird_particle_title">
+		<Label id="orbital_aura_particle_text" text="Orbital Aura" />
+
+</Panel>
+</Panel>
+
+<Panel class="blue_lightning_icon" id="blue_lightning_icon">
+	<Button id="blue_lightning_particle_button" onactivate="PlayerSelectBlueLightningParticle()">
+	<Image src="file://{images}/custom_game/loading_screen/blue_lightning.png" />
+	<Label id="blue_lightning_particle_owned_text" text="(300 Gems)" />
+</Button>
+	<Panel class="blue_lightning_particle_title" id="blue_lightning_particle_title">
+		<Label id="blue_lightning_particle_text" text="Blue Lightning" />
+
+</Panel>
+</Panel>
 
 
+<Panel class="red_lightning_icon" id="red_lightning_icon">
+	<Button id="red_lightning_particle_button" onactivate="PlayerSelectRedLightningParticle()">
+	<Image src="file://{images}/custom_game/loading_screen/red_lightning.png" />
+	<Label id="red_lightning_particle_owned_text" text="(300 Gems)" />
+</Button>
+	<Panel class="red_lightning_particle_title" id="red_lightning_particle_title">
+		<Label id="red_lightning_particle_text" text="Red Lightning" />
 
+</Panel>
+</Panel>
+
+<Panel class="gold_lightning_icon" id="gold_lightning_icon">
+	<Button id="gold_lightning_particle_button" onactivate="PlayerSelectGoldLightningParticle()">
+	<Image src="file://{images}/custom_game/loading_screen/gold_lightning.png" />
+	<Label id="gold_lightning_particle_owned_text" text="(400 Gems)" />
+</Button>
+	<Panel class="gold_lightning_particle_title" id="gold_lightning_particle_title">
+		<Label id="gold_lightning_particle_text" text="Gold Lightning" />
+
+</Panel>
+</Panel>
 
 </Panel>
 

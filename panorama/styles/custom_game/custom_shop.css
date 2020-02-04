@@ -371,6 +371,146 @@ color:white;
 background-color: gradient( linear, 5% 0%, 100% 0%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
 }
 
+.orbital_aura_icon
+{
+width:20%;
+height:20%;
+margin-top: 66%;
+margin-left: 5%;
+horizontal-align: left;
+color: white;
+background-size: 100%;
+font-family: RadianceM;
+
+
+}
+.orbital_aura_particle_title
+{
+height: 40px;
+horizontal-align: center;
+vertical-align: top;
+color: white;
+font-size: 20px;
+font-family: RadianceM;
+margin-top: -20px;
+ background-color: gradient( linear, 0% 5%, 0% 100%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+#orbital_aura_particle_owned_text
+{
+horizontal-align: left;
+font-size: 15px;
+vertical-align: bottom;
+font-family: RadianceM;
+color:white;
+ font-weight: bold;
+background-color: gradient( linear, 5% 0%, 100% 0%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+
+.blue_lightning_icon
+{
+width:20%;
+height:20%;
+margin-top: 66%;
+margin-left: 28%;
+horizontal-align: left;
+color: white;
+background-size: 100%;
+font-family: RadianceM;
+
+
+}
+.blue_lightning_particle_title
+{
+height: 40px;
+horizontal-align: center;
+vertical-align: top;
+color: white;
+font-size: 20px;
+font-family: RadianceM;
+margin-top: -20px;
+ background-color: gradient( linear, 0% 5%, 0% 100%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+#blue_lightning_particle_owned_text
+{
+horizontal-align: left;
+font-size: 15px;
+vertical-align: bottom;
+font-family: RadianceM;
+color:white;
+ font-weight: bold;
+background-color: gradient( linear, 5% 0%, 100% 0%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+
+.red_lightning_icon
+{
+width:20%;
+height:20%;
+margin-top: 66%;
+margin-left: 51%;
+horizontal-align: left;
+color: white;
+background-size: 100%;
+font-family: RadianceM;
+
+
+}
+.red_lightning_particle_title
+{
+height: 40px;
+horizontal-align: center;
+vertical-align: top;
+color: white;
+font-size: 20px;
+font-family: RadianceM;
+margin-top: -20px;
+ background-color: gradient( linear, 0% 5%, 0% 100%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+#red_lightning_particle_owned_text
+{
+horizontal-align: left;
+font-size: 15px;
+vertical-align: bottom;
+font-family: RadianceM;
+color:white;
+ font-weight: bold;
+background-color: gradient( linear, 5% 0%, 100% 0%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+
+
+.gold_lightning_icon
+{
+width:20%;
+height:20%;
+margin-top: 66%;
+margin-left: 74%;
+horizontal-align: left;
+color: white;
+background-size: 100%;
+font-family: RadianceM;
+
+
+}
+.gold_lightning_particle_title
+{
+height: 40px;
+horizontal-align: center;
+vertical-align: top;
+color: white;
+font-size: 20px;
+font-family: RadianceM;
+margin-top: -20px;
+ background-color: gradient( linear, 0% 5%, 0% 100%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
+#gold_lightning_particle_owned_text
+{
+horizontal-align: left;
+font-size: 15px;
+vertical-align: bottom;
+font-family: RadianceM;
+color:white;
+ font-weight: bold;
+background-color: gradient( linear, 5% 0%, 100% 0%, from( #e68a00 ), color-stop( .35, #e68a00 ), to( #0000 ) );
+}
 
 
 Label, TextEntry

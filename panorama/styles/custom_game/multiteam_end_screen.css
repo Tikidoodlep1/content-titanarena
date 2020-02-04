@@ -370,6 +370,12 @@
 	width: 80px;
 	text-align: center;
 }
+.scoreCol_GemsEarned
+{
+	width: 80px;
+	text-align: center;
+	color:orange;	
+}
 
 .ScoreCol_Hero
 {
@@ -384,7 +390,7 @@
 
 .ScoreCol_Kills,
 .ScoreCol_Deaths,
-.ScoreCol_Assists
+.ScoreCol_Assists,
 {
 	width: 50px;
 	text-align: center;
