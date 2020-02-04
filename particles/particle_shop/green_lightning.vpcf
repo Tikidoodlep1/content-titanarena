@@ -154,10 +154,10 @@
 			m_ChildRef = resource:"particles/econ/items/zeus/lightning_weapon_fx/zues_immortal_lightning_weapon_ambient_glow.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/econ/items/zeus/lightning_weapon_fx/zues_immortal_lightning_weapon_elec.vpcf"
+			m_ChildRef = resource:"particles/econ/items/zeus/lightning_weapon_fx/zues_immortal_lightning_weapon_magic.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/econ/items/zeus/lightning_weapon_fx/zues_immortal_lightning_weapon_magic.vpcf"
+			m_ChildRef = resource:"particles/lightnine_basic.vpcf"
 		},
 	]
 	m_PreEmissionOperators = 

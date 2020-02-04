@@ -63,13 +63,13 @@
 		},
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMax = [ 211, 176, 5, 255 ]
-			m_ColorMin = [ 255, 233, 0, 255 ]
+			m_ColorMax = [ 180, 201, 255, 255 ]
+			m_ColorMin = [ 104, 157, 255, 255 ]
 		},
 		{
 			_class = "C_INIT_RandomRadius"
 			m_flRadiusRandExponent = 14.0
-			m_flRadiusMin = 35.0
+			m_flRadiusMin = 40.0
 			m_flRadiusMax = 70.0
 		},
 		{
