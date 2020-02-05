@@ -23,9 +23,14 @@
 				<Label class="LegendPanel ScoreCol_Assists" text="#custom_end_screen_legend_assists" />
 				<Label class="LegendPanel ScoreCol_Items" text="#custom_end_screen_legend_items" />
 				<Label class="LegendPanel ScoreCol_Gold" text="#custom_end_screen_legend_gold" />
+				<Image id="gem_logo" src="file://{images}/custom_game/loading_screen/gem_currency_scoreboard.png" />
+
 			</Panel>
 			<Panel id="TeamsContainer" />
-			
-		</Panel>
+
+
+
+
 	</Panel>
+</Panel>
 </root>

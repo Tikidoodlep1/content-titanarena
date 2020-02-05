@@ -243,7 +243,8 @@
 #LevelContainer,
 #KillsContainer,
 #DeathsContainer,
-#AssistsContainer
+#AssistsContainer,
+#GemsContainer
 {
 	height: 100%;
 }
@@ -391,6 +392,7 @@
 .ScoreCol_Kills,
 .ScoreCol_Deaths,
 .ScoreCol_Assists,
+.ScoreCol_Gems_Earned,
 {
 	width: 50px;
 	text-align: center;
@@ -406,4 +408,25 @@
 {
 	width: 70px;
 	text-align: center;
+}
+#gem_logo
+{
+	margin-top: -30px;
+width:50px;
+height: 50px;
+
+}
+
+#PlayerGemsEarned
+{
+		horizontal-align: center;
+	vertical-align: center;
+	font-size: 15px;
+	text-align: center;
+	color: orange;
+}
+.GemsContainer
+{
+width: 500px;
+
 }
