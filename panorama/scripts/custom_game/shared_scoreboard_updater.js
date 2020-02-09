@@ -54,12 +54,17 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
 		_ScoreboardUpdater_SetTextSafe( playerPanel, "Deaths", playerInfo.player_deaths );
 		_ScoreboardUpdater_SetTextSafe( playerPanel, "Assists", playerInfo.player_assists );
 		var playerGems = (Players.GetKills( playerId ) + Players.GetAssists(playerId)/2);
+		if (Game.GetTeamDetails(2).team_num_players + Game.GetTeamDetails(3).team_num_players >= 4 || Game.GetDOTATime( false, false ) >= 1200)
+		{
 		if (Game.GetGameWinner() == Players.GetTeam(playerId))
 		{
 		_ScoreboardUpdater_SetTextSafe( playerPanel, "PlayerGemsEarned", playerGems + 20);
 		} else {
 		_ScoreboardUpdater_SetTextSafe( playerPanel, "PlayerGemsEarned", playerGems);
 		}
+	} else {
+		_ScoreboardUpdater_SetTextSafe( playerPanel, "PlayerGemsEarned", 0);
+	}
 		
 		var playerPortrait = playerPanel.FindChildInLayoutFile( "HeroIcon" );
 		if ( playerPortrait )

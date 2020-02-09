@@ -7,7 +7,6 @@ function loadShop()
 		$("#shop-title").text = player_name + "'s Customization Shop"
 
 
-
 }
 
 function PlayerSelectDevParticle()
