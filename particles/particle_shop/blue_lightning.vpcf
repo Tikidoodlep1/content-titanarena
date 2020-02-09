@@ -39,6 +39,10 @@
 			_class = "C_OP_FadeOutSimple"
 			m_flFadeOutTime = 0.5
 		},
+		{
+			_class = "C_OP_MovementPlaceOnGround"
+			m_flOffset = 50.0
+		},
 	]
 	m_Initializers = 
 	[
@@ -76,6 +80,11 @@
 			_class = "C_INIT_RandomColor"
 			m_ColorMin = [ 0, 0, 209, 255 ]
 			m_ColorMax = [ 127, 115, 201, 255 ]
+			m_TintMin = [ 1, 0, 84, 255 ]
+			m_TintMax = [ 2, 63, 110, 255 ]
+			m_flTintPerc = 25.0
+			m_nTintBlendMode = "PARTICLEBLEND_LIGHTEN"
+			m_flLightAmplification = 1.5
 		},
 		{
 			_class = "C_INIT_PositionWarp"
@@ -110,7 +119,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 9.0
+				m_flLiteralValue = 20.0
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
@@ -138,6 +147,7 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
+			m_flScalePerParentParticle = 3.0
 		},
 		{
 			_class = "C_OP_InstantaneousEmitter"

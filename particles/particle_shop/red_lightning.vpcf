@@ -39,6 +39,10 @@
 			_class = "C_OP_FadeOutSimple"
 			m_flFadeOutTime = 0.5
 		},
+		{
+			_class = "C_OP_MovementPlaceOnGround"
+			m_flOffset = 50.0
+		},
 	]
 	m_Initializers = 
 	[
@@ -76,6 +80,11 @@
 			_class = "C_INIT_RandomColor"
 			m_ColorMin = [ 128, 0, 0, 255 ]
 			m_ColorMax = [ 201, 115, 115, 255 ]
+			m_TintMin = [ 255, 0, 0, 255 ]
+			m_TintMax = [ 255, 0, 0, 255 ]
+			m_flTintPerc = 20.0
+			m_nTintBlendMode = "PARTICLEBLEND_LIGHTEN"
+			m_flLightAmplification = 1.5
 		},
 		{
 			_class = "C_INIT_PositionWarp"
